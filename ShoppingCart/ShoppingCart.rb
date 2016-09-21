@@ -12,11 +12,15 @@ class ShoppingCart
 
   #Calculate the total cost
   def totalPrice()
-  	#Add each product price to our total
+    #Add each product price to our total
     @products.each do |product|
-    	@price += product.price 
+      @price += product.getPrice 
     end
-	#return the total price of the cart
-    @price
+  #return the total price of the cart and if the number of products is greater than 5, it's has a discount
+  if @products.size > 5
+    @price = 0.9*@price  
+   else
+    @price 
+   end 
   end
 end

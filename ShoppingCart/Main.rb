@@ -45,9 +45,9 @@ while continue do
 
 			#If the product added, ask to continue the purchase
 			puts "========================================="
-			puts "Do you want anything else? (T/F)"
+			puts "Do you want anything else? (Y/N)"
 			puts "========================================="
-			if "F" == gets.chomp
+			if "N" == gets.chomp.upcase
 				continue = false
 			end
 	else 
