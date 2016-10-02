@@ -4,7 +4,6 @@
     right: 50px;
     width: 600px;
     height: 50px;
-	background: blue;
 }
 #body {
     position: fixed;
@@ -13,13 +12,27 @@
     width: 1200px;
     height: 400px;
 }
+#link {
+    font-family: arial;
+    color: grey;
+  font-weight: bold;
+}
 #footer {
+    font-family: Arial;    
+    font-size: 14px;
     position: fixed;
     top: 700px;
     right: 50px;
     width: 1500px;
-    height: 50px;
+    height: 30px;
 	background: #CCC;
+	padding: 10px;
+}
+#footerLeft {
+	float: left;
+}
+#footerRight {
+	float: right;
 }
 #logo {
     background-image: url('../img/googlelogo.png');
@@ -31,16 +44,16 @@
 #textbox {
     position: fixed;
     top: 370px;
-    right: 600px;	
+    right: 520px;	
 }
 #btnSearch {
     position: fixed;
-    top: 500px;
+    top: 480px;
     right: 820px;	
 }
 #btnLucky {
     position: fixed;
-    top: 500px;
+    top: 480px;
     right: 700px;	
 }
 
@@ -51,8 +64,7 @@
   border-radius: 2px;
   font-family: Arial;
   font-weight: bold;
-  color: #111;
-  font-size: 12px;
+  color: #111;  font-size: 12px;
   box-shadow-color: #999;
   box-shadow-x: 0;
   box-shadow-y: ;
@@ -95,4 +107,28 @@
   background-clip: border-box;
   -webkit-background-size: contain;
   background-size: contain;
+}
+
+/* unvisited link */
+a:link {
+    color: #333;
+    text-decoration: none;
+}
+
+/* visited link */
+a:visited {
+    color: #333;
+    text-decoration: none;
+}
+
+/* mouse over link */
+a:hover {
+    color: #333;
+    text-decoration: none;
+}
+
+/* selected link */
+a:active {
+    color: #333;
+    text-decoration: none;
 }
